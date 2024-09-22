@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("font/terminal-grotesque.ttf");
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Terminal Grotesque", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -23,6 +28,7 @@ body {
   place-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #e6e6e6;
 }
 
 h1 {
@@ -55,10 +61,16 @@ button {
 }
 
 #app {
+  width: 100%;
   max-width: 1280px;
+  height: 100vh;
   /* margin: 0 auto; */
   padding: 2rem;
-  text-align: center;
+}
+
+svg {
+  position: relative;
+  z-index: -2;
 }
 
 @media (prefers-color-scheme: light) {

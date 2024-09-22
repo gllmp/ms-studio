@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "terminal-grotesque";
-  src: url("./assets/fonts/terminal-grotesque.woff") format("woff");
+  src: url("./assets/fonts/terminal-grotesque.ttf") format("ttf");
 }
 
 :root {

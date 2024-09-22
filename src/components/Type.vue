@@ -33,8 +33,8 @@ const gravity = new Two.Vector(0, 0.66);
 // The font styles to apply to
 // all text in the scene.
 const styles = {
-  family: 'Terminal Grotesque, sans-serif',
-  size: 100,
+  family: 'terminal-grotesque, sans-serif',
+  size: 50,
   leading: 50,
   weight: 900
 };

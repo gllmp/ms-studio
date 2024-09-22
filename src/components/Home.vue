@@ -8,7 +8,7 @@
     </div>
     <div class="home-content">
       <div>
-        <p>Hello!</p>
+        <p>Hello.</p>
         <p>This is Manami Seki Space Time Research Studio.</p>
       </div>
       <div>

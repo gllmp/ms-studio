@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Terminal-Grotesque";
-  src: url("https://github.com/gllmp/ms-studio/blob/main/src/assets/fonts/terminal-grotesque.ttf") format("ttf");
+  font-family: "terminal-grotesque";
+  src: url("./assets/fonts/terminal-grotesque.woff") format("woff");
 }
 
 :root {
-  font-family: "Terminal-Grotesque", Helvetica, Arial, sans-serif;
+  font-family: "terminal-grotesque", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

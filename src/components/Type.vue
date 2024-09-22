@@ -42,7 +42,7 @@ const gravity = new Two.Vector(0, 0.66);
 // all text in the scene.
 const styles = {
   family: 'TerminalGrotesque, sans-serif',
-  size: isMobile.value ? 100 : 50,
+  size: isMobile.value ? 100 : 80,
   leading: 50,
   weight: 900
 };

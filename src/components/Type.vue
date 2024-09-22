@@ -124,7 +124,8 @@ function add(msg: any) {
   const x = (Math.random() * two.width) / 2 + two.width / 4;
   const y = two.height * 1.25;
 
-  const r = Math.random() * 100 + 60;
+  const r = Math.floor(Math.random() * (150 - 50) + 50);
+  console.log(r);
   styles.size = r;
 
   const text = two.makeText(msg, x, y, styles);

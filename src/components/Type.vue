@@ -42,7 +42,7 @@ const gravity = new Two.Vector(0, 0.66);
 // all text in the scene.
 const styles = {
   family: 'TerminalGrotesque, sans-serif',
-  size: isMobile ? 100 : 50,
+  size: isMobile.value ? 100 : 50,
   leading: 50,
   weight: 900
 };
@@ -72,11 +72,10 @@ function keydown() {
 }
 
 // Handle touchstart event and
-// add a random letter to the scene.
 function touchstart() {
-  const r = Math.random();
-  const range = Math.floor(r * 26) + (r > 0.5 ? 97 : 65)
-  const character = String.fromCharCode(range);
+  // const character = String.fromCharCode(e.which);
+  const characters = ['M', 'S', 'T', 'R'];
+  const character = characters[Math.floor(Math.random()*characters.length)]
   add(character);
 }
 

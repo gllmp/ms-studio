@@ -118,9 +118,13 @@ const year = ref(new Date().getFullYear())
   }
   .home-header {
     margin-bottom: 2rem;
+    padding-right: 0;
   }
   .home-container {
     height: auto;
+  }
+  .copyright {
+    margin-bottom: 4rem;
   }
 }
 </style>

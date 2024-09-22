@@ -25,6 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 body {
   margin: 0;
   display: flex;

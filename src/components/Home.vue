@@ -22,8 +22,8 @@
         <p class="home-contact">contact: <a ref="contactLink" href="mailto:manamiro2@gmail.com">manamiro2[at]gmail[dot]com</a></p>
       </div>
       <div class="home-credit">
-        <p class="credit-font">Typeface: <a href="https://velvetyne.fr/fonts/terminal-grotesque/" target="_blank">Terminal Grotesque</a> by <a href="https://raphaelbastide.com/" target="_blank">Raphaël Bastide</a> & Jérémy Landes.</p>
-        <p class="credit-web">Website by <a href="https://www.instagram.com/_.gcode/" target="_blank">Guillaume Piccarreta</a></p>
+        <p class="credit-font">Typeface: <a href="https://velvetyne.fr/fonts/terminal-grotesque/" target="_blank">Terminal Grotesque</a> by <a href="https://raphaelbastide.com/" target="_blank">Raphaël Bastide</a> & Jérémy Landes</p>
+        <p class="credit-web">Code: <a href="https://www.instagram.com/_.gcode/" target="_blank">Guillaume Piccarreta</a></p>
       </div>
       <Type />
     </div>

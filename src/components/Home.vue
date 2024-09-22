@@ -16,7 +16,7 @@
         <p>Her works focus on the exchange process between language, image, the physical and the multidimensional space.</p>
       </div>
       <div>
-        <p><a class="underline" href="/pdf/Manami-Seki-CV.pdf" target="_blank">CV</a> / <a class="underline" href="/pdf/Manami-Seki-Portfolio.pdf" target="_blank">Portfolio</a></p>
+        <p><a class="underline" href="/src/assets/pdf/Manami-Seki-CV.pdf" target="_blank">CV</a> / <a class="underline" href="/src/assets/pdf/Manami-Seki-Portfolio.pdf" target="_blank">Portfolio</a></p>
       </div>
       <div>
         <p class="home-contact">contact: <a ref="contactLink" href="mailto:manamiro2@gmail.com">manamiro2[at]gmail[dot]com</a></p>

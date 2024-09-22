@@ -2,9 +2,17 @@
 </template>
 
 <script setup lang="ts">
-// import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 // @ts-ignore
 import Two from 'https://cdn.skypack.dev/two.js@latest'
+
+const isMobile = ref(false);
+// const isMobile = window.navigator.maxTouchPoints > 0;
+// const message = isMobile ? 'Tap Me' : 'Start Typing';
+
+onMounted(() => {
+  isMobile.value = /Mobi|Android/i.test(navigator.userAgent);
+});
 
 // Initialize an instance to render
 // render to the screen. Try changing
@@ -34,13 +42,10 @@ const gravity = new Two.Vector(0, 0.66);
 // all text in the scene.
 const styles = {
   family: 'TerminalGrotesque, sans-serif',
-  size: 100,
+  size: isMobile ? 100 : 50,
   leading: 50,
   weight: 900
 };
-
-// const isMobile = window.navigator.maxTouchPoints > 0;
-// const message = isMobile ? 'Tap Me' : 'Start Typing';
 
 // Create text that informs the user
 // on what they should do to interact

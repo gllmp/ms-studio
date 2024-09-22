@@ -3,23 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Terminal Grotesque";
-  src: url("/src/assets/fonts/terminal-grotesque.ttf") format("ttf");
+  font-family: "TerminalGrotesque";
+  src: url('/src/assets/fonts/TerminalGrotesque.woff2') format('woff2'),
+       url('/src/assets/fonts/TerminalGrotesque.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Important for Safari to avoid blank text during font loading */
 }
 
 :root {
-  font-family: "Terminal Grotesque", Helvetica, Arial, sans-serif;
+  font-family: "TerminalGrotesque", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 1);
   background-color: #fff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {

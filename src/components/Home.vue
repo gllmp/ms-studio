@@ -123,6 +123,9 @@ const year = ref(new Date().getFullYear())
   .home-container {
     height: auto;
   }
+}
+
+@media (max-width:320px)  {
   .copyright {
     margin-bottom: 4rem;
   }

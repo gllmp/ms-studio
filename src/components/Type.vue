@@ -125,7 +125,6 @@ function add(msg: any) {
   const y = two.height * 1.25;
 
   const r = Math.floor(Math.random() * (150 - 50) + 50);
-  console.log(r);
   styles.size = r;
 
   const text = two.makeText(msg, x, y, styles);

@@ -40,9 +40,9 @@ const gravity = new Two.Vector(0, 0.66);
 
 // The font styles to apply to
 // all text in the scene.
-const styles = {
+let styles = {
   family: 'TerminalGrotesque, sans-serif',
-  size: isMobile.value ? 10 : 100,
+  size: 100,
   leading: 50,
   weight: 900
 };
@@ -123,6 +123,9 @@ function add(msg: any) {
 
   const x = (Math.random() * two.width) / 2 + two.width / 4;
   const y = two.height * 1.25;
+
+  const r = Math.random() * 100 + 60;
+  styles.size = r;
 
   const text = two.makeText(msg, x, y, styles);
   text.size *= 3;

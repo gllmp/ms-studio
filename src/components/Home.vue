@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Logo from './Logo.vue'
+// import Logo from './Logo.vue'
 import Type from './Type.vue'
 
 defineProps<{ msg?: string }>()

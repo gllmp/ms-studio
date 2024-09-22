@@ -2,7 +2,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+// import { ref } from 'vue'
+// @ts-ignore
 import Two from 'https://cdn.skypack.dev/two.js@latest'
 
 // Initialize an instance to render
@@ -22,7 +23,7 @@ two.renderer.domElement.style.background = '#ddd';
 
 // Create an array to keep track of the 
 // the different characters which will be added.
-const characters = [];
+const characters: string[] = [];
 
 // Set the gravity of the world.
 // Try changing the x and y components
@@ -38,8 +39,8 @@ const styles = {
   weight: 900
 };
 
-const isMobile = window.navigator.maxTouchPoints > 0;
-const message = isMobile ? 'Tap Me' : 'Start Typing';
+// const isMobile = window.navigator.maxTouchPoints > 0;
+// const message = isMobile ? 'Tap Me' : 'Start Typing';
 
 // Create text that informs the user
 // on what they should do to interact
@@ -58,7 +59,7 @@ two.bind('update', update);
 
 // Handle keydown event and add
 // the pressed letter to the scene.
-function keydown(e) {
+function keydown() {
   // const character = String.fromCharCode(e.which);
   const characters = ['M', 'S', 'T', 'R'];
   const character = characters[Math.floor(Math.random()*characters.length)]
@@ -67,7 +68,7 @@ function keydown(e) {
 
 // Handle touchstart event and
 // add a random letter to the scene.
-function touchstart(e) {
+function touchstart() {
   const r = Math.random();
   const range = Math.floor(r * 26) + (r > 0.5 ? 97 : 65)
   const character = String.fromCharCode(range);
@@ -91,14 +92,17 @@ function update() {
   for (let i = 0; i < characters.length; i++) {
 
     const text = characters[i];
-    
+    // @ts-ignore
     text.translation.addSelf(text.velocity);
+    // @ts-ignore
     text.rotation += text.velocity.r;
+    // @ts-ignore
     text.velocity.add(gravity);
 
     // If the text's velocity is greater than 0
     // and the position is off the page, then
     // remove the text.
+    // @ts-ignore
     if (text.velocity.y > 0 && text.translation.y > two.height) {
       two.scene.remove(text);
       two.release(text);
@@ -111,7 +115,7 @@ function update() {
 // instance to the scene, set its styles
 // and create a velocity and rotation
 // to be applied in the update callback.
-function add(msg) {
+function add(msg: any) {
 
   const x = (Math.random() * two.width) / 2 + two.width / 4;
   const y = two.height * 1.25;

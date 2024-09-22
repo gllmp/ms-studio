@@ -71,7 +71,7 @@ function keydown() {
   add(character);
 }
 
-// Handle touchstart event and
+// Handle touchstart event
 function touchstart() {
   // const character = String.fromCharCode(e.which);
   const characters = ['M', 'S', 'T', 'R'];

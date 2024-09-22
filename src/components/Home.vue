@@ -1,8 +1,8 @@
 <template>
   <div class="home-container">
     <div class="home-header">
-      <a href="./">
-        <img src="../assets/img/msstrs-logo.png" class="logo" alt="manami seki space time research studio logo" />
+      <a class="logo-container" href="./">
+        <img class="logo" src="../assets/img/msstrs-logo.png" alt="manami seki space time research studio logo" />
       </a>
       <!-- <Logo /> -->
     </div>
@@ -46,6 +46,9 @@ const year = ref(new Date().getFullYear())
 </script>
 
 <style lang="scss" scoped>
+.logo-container {
+  padding-top: 1rem;
+}
 .logo {
   height: 5rem;
 }
@@ -62,7 +65,7 @@ const year = ref(new Date().getFullYear())
   justify-content: flex-start;
   width: 100%;
   height: 30%;
-  padding-right: 1rem;
+  padding-right: 4rem;
 }
 .home-content {
   display: flex;
@@ -105,6 +108,19 @@ const year = ref(new Date().getFullYear())
 
   p {
     font-size: 0.8rem;
+  }
+}
+
+// mobile
+@media (min-width:320px)  {
+  .logo-container {
+    padding-top: 0;
+  }
+  .home-header {
+    margin-bottom: 2rem;
+  }
+  .home-container {
+    height: auto;
   }
 }
 </style>
